@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">desafio4</string>
+    <string name="msjCargaImagenes">Sección de carga de imágenes</string>
+    <string name="cargar_imagen">Cargar Imagen</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="abrir_web">Abrir Web</string>
+    <string name="share">Compartir la Información</string>
+</resources>

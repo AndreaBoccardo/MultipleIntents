@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/ivLogoResultAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogoResultAct"
+        app:layout_constraintStart_toStartOf="@+id/ivLogoResultAct"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoResultAct">
+
+        <Button
+            android:id="@+id/btnAbrirWeb"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/abrir_web" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/share" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Llamar"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Direccion"
+        app:layout_constraintEnd_toEndOf="@+id/btnLlamar"
+        app:layout_constraintStart_toStartOf="@+id/btnLlamar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLlamar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
